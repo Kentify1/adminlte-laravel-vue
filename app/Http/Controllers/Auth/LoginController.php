@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -21,15 +20,6 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
-
-    protected function authenticated(Request $request, $user)
-    {
-        $user->generateApiToken();
-        return response()->json([
-            'token' => $user->api_token,
-        ]);
-    }
-
 
     /**
      * Where to redirect users after login.
