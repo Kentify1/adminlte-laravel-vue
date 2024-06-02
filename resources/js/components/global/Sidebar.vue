@@ -6,7 +6,7 @@
             <a href="/" class="brand-link">
                 <img src="https://adminlte.io/themes/v3/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+                <span class="brand-text font-weight-light">HRIS </span>
             </a>
             <!-- Sidebar -->
             <div class="sidebar">
@@ -17,6 +17,7 @@
                 </div>
                 <div class="info">
                 <a href="#" class="d-block">{{ user.name }}</a>
+                
                 </div>
             </div>
 
@@ -26,7 +27,7 @@
                     <!-- Add icons to the links using the .nav-icon class
                         with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="https://adminlte.io/docs/3.0" class="nav-link active">
+                        <a href="home" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Dashboard</p>
                         </a>
@@ -188,11 +189,6 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item text-center mt-3">
-                        <a href="https://buymeacoffee.com/hbakouane" target="_blank">
-                            <img class="img-fluid rounded-pill border" style="height: 70px;" src="https://influencermarketinghub.com/wp-content/uploads/2021/03/skiptheflip_buymeacoffee3_creativeworkdonations.png">
-                        </a>
                     </li>
                 </ul>
             </nav>

@@ -20,31 +20,35 @@
 import Navbar from './global/Navbar'
 import Sidebar from './global/Sidebar'
 import Footer from './global/Footer'
+
 export default {
     name: "Container",
-    props: ['user', 'breadcrumbs', 'domain'],
+    props: ['user', 'breadcrumbs'],
     components: { Footer, Sidebar, Navbar },
     mounted() {
         // Load Js Files
         const jquery = document.createElement("script");
-        jquery.setAttribute('src', this.domain + '/assets/adminlte/plugins/jquery/jquery.min.js');
+        jquery.setAttribute('src', '/assets/adminlte/plugins/jquery/jquery.min.js');
         jquery.async = true;
         document.body.appendChild(jquery);
 
         const bootstrap = document.createElement("script");
-        bootstrap.setAttribute('src', this.domain + '/assets/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js');
+        bootstrap.setAttribute('src', '/assets/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js');
         bootstrap.async = true;
         document.body.appendChild(bootstrap);
 
         const adminlte = document.createElement("script");
-        adminlte.setAttribute('src', this.domain + '/assets/adminlte/dist/js/adminlte.min.js');
+        adminlte.setAttribute('src', '/assets/adminlte/dist/js/adminlte.min.js');
         adminlte.async = true;
         document.body.appendChild(adminlte);
 
         const overlayScrollBars = document.createElement("script");
-        overlayScrollBars.setAttribute('src', this.domain + '/assets/adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js');
+        overlayScrollBars.setAttribute('src', '/assets/adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js');
         overlayScrollBars.async = true;
         document.body.appendChild(overlayScrollBars);
     }
 }
 </script>
+
+
+

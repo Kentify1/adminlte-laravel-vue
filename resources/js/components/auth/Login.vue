@@ -1,9 +1,10 @@
 <template>
     <div class="register-page">
         <div class="register-box">
+            <h2 class="text-center"><b>FP</b> Human Resource Information System</h2>
             <div class="card">
                 <div class="card-body register-card-body">
-                    <p class="login-box-msg">Welcome Back</p>
+                    <p class="login-box-msg">Please login you account.</p>
 
                     <errors :success="success" :failure="failure" :message="message" :loading="loading" />
                     <form method="post" ref="form">
